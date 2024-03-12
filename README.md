@@ -23,26 +23,29 @@ Ensure you have a Java Development Kit (JDK) installed on your system to compile
 
 Navigate to the project directory and compile the Java files:
 
-### Compilation
-
-Navigate to the project directory and compile the Java files:
-
 ```bash
 javac Autocomplete.java BinarySearchDeluxe.java Term.java
 ```
 
-Running
+### Running
 
 Run the autocomplete system with:
+
+```bash
 java Autocomplete <filename> <number-of-suggestions>
+```
 
-<filename>: Path to a text file containing the terms, one per line, with each line formatted as <weight><tab><query string>.
-<number-of-suggestions>: The maximum number of suggestions to return for a given prefix.
+- `<filename>`: Path to a text file containing the terms, one per line, with each line formatted as `<weight><tab><query string>`.
+- `<number-of-suggestions>`: The maximum number of suggestions to return for a given prefix.
 
-Example
+
+#### Example
+
+To run the autocomplete system on a file named `cities.txt` and get up to 5 suggestions for each prefix entered, use the following command:
+
+```bash
 java Autocomplete cities.txt 5
-
-This command will run the autocomplete system on the cities.txt file, returning up to 5 suggestions for each prefix entered by the user.
+```
 
 Contributing
 Contributions to this project are welcome. Please feel free to fork the repository, make your changes, and submit a pull request with your improvements.
@@ -51,5 +54,4 @@ License
 This Java Autocomplete System is made available under the MIT License. Feel free to use, modify, and distribute the code as you see fit.
 
 Acknowledgments
-Thanks to the inventors and contributors to the algorithms and data structures that make systems like this possible.
-This project was inspired by the goal of understanding and implementing efficient search and sorting techniques in Java.
+Thanks to the inventors and contributors to the algorithms and data structures that make systems like this possible. This project was inspired by the goal of understanding and implementing efficient search and sorting techniques in Java.
